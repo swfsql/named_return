@@ -1,0 +1,20 @@
+[package]
+name = "named_return"
+version = "0.1.0"
+authors = ["Thiago <swfsql@gmail.com>"]
+license = "MIT"
+description = "Derives a wrapper function which insert the named return variables."
+repository = "https://github.com/swfsql/named_return"
+keywords = ["return", "name"]
+readme = "README.md"
+edition = "2018"
+documentation = "https://docs.rs/named_return/0.1.0/named_return/"
+
+[lib]
+proc-macro = true
+
+[dependencies]
+syn = { version = "0.15.30", features = ["full"] } 
+proc-macro2 = { version = "0.4.4", default-features = false }
+quote = "0.6.11"
+
